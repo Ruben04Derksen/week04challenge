@@ -2,21 +2,39 @@
     box-sizing: border-box;
     font-family: Gotham 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+:root{
+    --hue-neutral: 200;
+}
 
 body{
+    --hue: var(--hue-neutral);
    padding: 0;
     margin: 0;
     display: flex;
     width: 100vw;
     justify-content: center;
     align-items: center;
+    background-color: hsl(var(--hue), 100% 20%);
 }
 
 .container{
+    margin-top: 25%;
     width: 800px;
     max-width: 80%;
-    background-color: aquamarine;
+    background-color:aquamarine;
     border-radius: 4px;
     padding: 10px;
     box-shadow: 0 0 10px 2px;
+}
+
+.selections{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.button{
+    --hue: var(--hue-neutral);
+background-color: hsl(var(--hue), 100% 50%);
 }
