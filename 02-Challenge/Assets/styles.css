@@ -38,14 +38,14 @@
     box-shadow: 0 0 10px 2px;
   }
   
-  .btn-grid {
+  .selections{
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 10px;
     margin: 20px 0;
   }
   
-  .btn {
+  .button{
     --hue: var(--hue-neutral);
     border: 1px solid hsl(var(--hue), 100%, 30%);
     background-color: hsl(var(--hue), 100%, 50%);
@@ -68,7 +68,7 @@
     --hue: var(--hue-wrong);
   }
   
-  .start-button-btn, .next-button-btn {
+  .start-button, .next-button{
     font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;
